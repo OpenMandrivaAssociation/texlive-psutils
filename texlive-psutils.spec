@@ -14,6 +14,7 @@ License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psutils.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psutils.doc.tar.xz
 BuildArch:	noarch
+Provides:	texlive-psutils.bin = %{EVRD}
 BuildRequires:	texlive-tlpkg
 Requires(post):	texlive-tlpkg
 Conflicts:	texlive-texmf <= 20110705-3
@@ -104,6 +105,7 @@ pstops, psnup, psresize, epsffit.
 %doc %{_texmfdir}/doc/man/man1/psselect.man1.pdf
 %doc %{_mandir}/man1/pstops.1*
 %doc %{_texmfdir}/doc/man/man1/pstops.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -131,3 +133,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
