@@ -6,7 +6,7 @@
 # catalog-version p17
 Name:		texlive-psutils
 Version:	p17
-Release:	5
+Release:	6
 Summary:	PostScript utilities
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/psutils
