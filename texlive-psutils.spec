@@ -1,6 +1,6 @@
 Name:		texlive-psutils
 Version:	61719
-Release:	1
+Release:	2
 Summary:	PostScript utilities
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/psutils
