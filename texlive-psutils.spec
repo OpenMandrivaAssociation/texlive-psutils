@@ -3,7 +3,7 @@ Version:	61719
 Release:	2
 Summary:	PostScript utilities
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/psutils
+URL:		https://www.ctan.org/tex-archive/support/psutils
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psutils.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/psutils.doc.r%{version}.tar.xz
